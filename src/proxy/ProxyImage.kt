@@ -1,15 +1,16 @@
-package structural.entity
+package proxy
 
-data class EconomClassFile(private val path: String) : FileInterface {
+data class ProxyImage(private val path: String) : Image {
 
     override fun getPath(): String {
         return path
     }
 
-    private var file: File? = null
+    private var file: RealImage? = null
+
     override fun getContents(): String {
         if (file == null) {
-            file = File(getPath())
+            file = RealImage(getPath())
         }
         return file!!.getContents() + " FROM PROXY"
     }

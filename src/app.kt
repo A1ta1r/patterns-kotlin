@@ -1,1 +1,1 @@
-fun main(args: Array<String>) = runStructural()
+fun main(args: Array<String>) = runFactoryMethod()

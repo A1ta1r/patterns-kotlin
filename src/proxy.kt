@@ -1,14 +1,14 @@
-import structural.entity.File
-import structural.entity.EconomClassFile
+import proxy.RealImage
+import proxy.ProxyImage
 
 const val homeDirectory = "files/"
 
-fun runStructural() {
+fun runProxy() {
     val path1 = homeDirectory + "video"
     val path2 = homeDirectory + "regular"
-    val videoFileProxy = EconomClassFile(path1)
-    val file = File(path2)
-    val videoFile = File(path1)
+    val videoFileProxy = ProxyImage(path1)
+    val file = RealImage(path2)
+    val videoFile = RealImage(path1)
 
     println(videoFileProxy.getPath())
     println(videoFileProxy.getContents())

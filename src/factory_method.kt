@@ -1,8 +1,8 @@
-import creational.factory.CoolShirtFactory
-import creational.factory.HoodieFactory
-import creational.factory.ShirtFactory
+import factory_method.CoolShirtFactory
+import factory_method.HoodieFactory
+import factory_method.ShirtFactory
 
-fun runCreational() {
+fun runFactoryMethod() {
     val shirtFactory = ShirtFactory()
     val coolShirtFactory = CoolShirtFactory()
     val hoodieFactory = HoodieFactory()

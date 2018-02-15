@@ -1,7 +1,4 @@
-package creational.factory
-
-import creational.entity.CoolShirt
-import creational.entity.Merchandise
+package factory_method
 
 class CoolShirtFactory : Factory {
     override fun getInstance(size: Int): Merchandise {

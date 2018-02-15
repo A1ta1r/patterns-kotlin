@@ -1,4 +1,4 @@
-package creational.entity
+package factory_method
 
 class Hoodie(size: Int, val isFluffy: Boolean = true) : Merchandise(size) {
     override fun toString(): String {

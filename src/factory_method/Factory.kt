@@ -1,6 +1,4 @@
-package creational.factory
-
-import creational.entity.Merchandise
+package factory_method
 
 interface Factory {
     fun getInstance(size: Int): Merchandise

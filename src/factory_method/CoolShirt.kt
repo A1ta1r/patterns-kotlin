@@ -1,4 +1,4 @@
-package creational.entity
+package factory_method
 
 class CoolShirt(size: Int, val isSigned: Boolean = false, val color: String = "Black & White") : Shirt(size) {
     override fun toString(): String {

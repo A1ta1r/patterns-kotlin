@@ -1,6 +1,6 @@
-package structural.entity
+package proxy
 
-interface FileInterface {
+interface Image {
     fun getContents(): String
     fun getPath(): String
 }
