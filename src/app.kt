@@ -1,1 +1,1 @@
-fun main(args: Array<String>) = runFactoryMethod()
+fun main(args: Array<String>) = runStrategy()

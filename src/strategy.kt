@@ -1,6 +1,6 @@
 import strategy.Formatter
-import strategy.LowerCaseStrategy
-import strategy.UpperCaseStrategy
+import strategy.SnakeCaseStrategy
+import strategy.CamelCaseStrategy
 
 fun runStrategy() {
     val s1 = "A Test String Numero Uno"
@@ -9,18 +9,18 @@ fun runStrategy() {
     println(s1)
     println(s2)
 
-    val upperFormat = UpperCaseStrategy()
-    val lowerFormat = LowerCaseStrategy()
+    val camel = CamelCaseStrategy()
+    val snake = SnakeCaseStrategy()
 
-    var formatter = Formatter(lowerFormat)
+    var formatter = Formatter(snake)
 
-    println("\nStrategy 1:")
-    println(formatter.handle(s1))
-    println(formatter.handle(s2))
+    println("\nStrategy 1: Snake case formatting")
+    println(formatter.format(s1))
+    println(formatter.format(s2))
 
-    formatter = Formatter(upperFormat)
+    formatter = Formatter(camel)
 
-    println("\nStrategy 2:")
-    println(formatter.handle(s1))
-    println(formatter.handle(s2))
+    println("\nStrategy 2: Camel case formatting")
+    println(formatter.format(s1))
+    println(formatter.format(s2))
 }
